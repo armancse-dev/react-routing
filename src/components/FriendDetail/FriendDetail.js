@@ -5,7 +5,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 const FriendDetail = () => {
    const {friendId} = useParams();
    const [friend, setFriend] = useState({});
-   const navigate = useNavigate;
+   const navigate = useNavigate();
    useEffect(() =>{
       const url = `https://jsonplaceholder.typicode.com/users/${friendId}`;
 

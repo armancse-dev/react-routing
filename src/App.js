@@ -8,6 +8,7 @@ import { BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import Header from './components/Header/Header';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Culture from './components/Culture/Culture';
+import PostDetail from './components/PostDetail/PostDetail';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path='/friends' element={<Friends/>}></Route>
           <Route path='/friend/:friendId' element={<FriendDetail></FriendDetail>}></Route>
+
+          <Route path='/post/:postId' element={<PostDetail/>}></Route>
+
           <Route exact path='/' element={<Home/>}></Route>
           <Route exact path='*' element={<NotFound/>}></Route>
         </Routes>
